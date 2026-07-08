@@ -1,0 +1,95 @@
+:root {
+  --color-text: #1a2233;
+  --color-text-muted: #5b6472;
+  --color-primary: #2563eb;
+  --color-border: #e2e8f0;
+  --font-base: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font-base);
+  color: var(--color-text);
+  background: #f5f7fa;
+}
+
+.resume-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+.resume-actions-right { display: flex; align-items: center; gap: 0.75rem; }
+.btn-link { font-weight: 600; font-size: 0.9rem; }
+.resume-actions button {
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+}
+
+.resume {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  background: #fff;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.resume-header { margin-bottom: 2rem; border-bottom: 3px solid var(--color-primary); padding-bottom: 1rem; }
+.resume-header h1 { margin: 0 0 0.25rem; font-size: 2rem; }
+.resume-title { color: var(--color-text-muted); margin: 0 0 0.75rem; font-weight: 600; }
+.resume-contact { list-style: none; display: flex; gap: 1.5rem; padding: 0; margin: 0; font-size: 0.9rem; }
+
+section { margin-bottom: 1.75rem; }
+h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-primary);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.resume-item { margin-bottom: 1.25rem; }
+.resume-item-head { display: flex; justify-content: space-between; align-items: baseline; }
+.resume-item-head h3 { margin: 0; font-size: 1.05rem; }
+.resume-item-head span { font-size: 0.85rem; color: var(--color-text-muted); font-weight: 600; }
+.resume-org { margin: 0.1rem 0 0.4rem; font-weight: 600; color: var(--color-text-muted); }
+.resume-org em { font-weight: 400; }
+
+.resume ul { margin: 0; padding-left: 1.2rem; }
+.resume li { margin-bottom: 0.3rem; color: var(--color-text-muted); }
+
+.resume-inline-list { display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 0; list-style: none; }
+.resume-inline-list li {
+  background: #eef2ff;
+  color: #1e3a8a;
+  border-radius: 999px;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+@media print {
+  body { background: #fff; }
+  .no-print { display: none; }
+  .resume { box-shadow: none; padding: 0; margin: 0; max-width: none; }
+}
+
+@media (max-width: 600px) {
+  .resume { padding: 1.5rem; }
+  .resume-item-head { flex-direction: column; align-items: flex-start; gap: 0.15rem; }
+  .resume-contact { flex-direction: column; gap: 0.35rem; }
+}
