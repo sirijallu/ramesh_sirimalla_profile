@@ -30,15 +30,6 @@ ramesh_sirimalla_profile/
 └── temp/                    Scratch folder (not part of the deployed site)
 ```
 
-## Before you publish
-
-A few placeholders only you can fill in:
-
-- **Contact form** — uses a `mailto:` action, which opens the visitor's email
-  client (works without a backend, but isn't as reliable as a hosted form
-  service). Consider swapping in [Formspree](https://formspree.io) or a
-  similar static-form provider if you want a smoother experience.
-
 ## Regenerating the resume PDF
 
 `resume/Ramesh_Sirimalla_Resume.pdf` is generated from `resume.html` via headless
