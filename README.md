@@ -10,14 +10,15 @@ Pages.
 
 ```
 ramesh_sirimalla_profile/
-├── index.html          Homepage — hero, about, skills, projects, experience,
-│                        certifications, achievements, articles, contact
+├── index.html          Homepage — sidebar nav, hero, and switchable sections:
+│                        about (experience, education, certifications tabs),
+│                        projects, skills, achievements, articles, contact
 ├── resume.html          Printable resume page (also downloadable as PDF)
 ├── css/
 │   ├── style.css        Site-wide styles (light + dark theme)
 │   └── resume.css        Styles for the resume page
 ├── js/
-│   └── main.js           Nav toggle, dark-mode toggle, scroll-spy, footer year
+│   └── main.js           Section switching, tabs, mobile sidebar, dark mode
 ├── images/                Profile photo, favicon, and project thumbnails (SVG)
 ├── assets/                 Reserved for future static assets
 ├── resume/
