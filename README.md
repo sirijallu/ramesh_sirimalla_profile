@@ -1,4 +1,4 @@
-# Ram Sirimalla — Portfolio Website
+# Ramesh Sirimalla — Portfolio Website
 
 A static, single-page portfolio site for a Data & AI Leader, built with plain
 HTML5, CSS3, and vanilla JavaScript. Designed to be hosted for free on GitHub
@@ -21,7 +21,7 @@ ramesh_sirimalla_profile/
 ├── images/                Profile photo, favicon, and project thumbnails (SVG)
 ├── assets/                 Reserved for future static assets
 ├── resume/
-│   └── Ram_Sirimalla_Resume.pdf   Downloadable resume
+│   └── Ramesh_Sirimalla_Resume.pdf   Downloadable resume
 ├── docs/
 │   └── deployment.md      GitHub Pages deployment notes
 └── temp/                    Scratch folder (not part of the deployed site)
@@ -48,12 +48,12 @@ A few placeholders only you can fill in:
 
 ## Regenerating the resume PDF
 
-`resume/Ram_Sirimalla_Resume.pdf` is generated from `resume.html` via headless
+`resume/Ramesh_Sirimalla_Resume.pdf` is generated from `resume.html` via headless
 Chrome. After editing `resume.html`, regenerate it with:
 
 ```bash
 "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless --disable-gpu \
-  --print-to-pdf="resume/Ram_Sirimalla_Resume.pdf" --no-pdf-header-footer \
+  --print-to-pdf="resume/Ramesh_Sirimalla_Resume.pdf" --no-pdf-header-footer \
   "file://$(pwd)/resume.html"
 ```
 
