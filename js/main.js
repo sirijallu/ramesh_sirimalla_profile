@@ -64,8 +64,8 @@ function initSections() {
     link.addEventListener('click', (e) => {
       e.preventDefault();
       const id = link.dataset.section;
-      history.replaceState(null, '', '#' + id);
       show(id, true);
+      try { history.replaceState(null, '', '#' + id); } catch (err) { /* e.g. file:// previews */ }
     });
   });
 

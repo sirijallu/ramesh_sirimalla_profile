@@ -19,7 +19,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -29,18 +29,14 @@
 
   <!-- ===================== Sidebar Navigation ===================== -->
   <nav class="sidebar" id="sidebar" aria-label="Primary">
-    <a href="#welcome" class="sidebar-brand" data-section="welcome">
-      <span class="logo">RS<span class="logo-dot">.</span></span>
-      <span class="sidebar-name">Ramesh Sirimalla</span>
-    </a>
-
     <ul class="sidebar-menu">
       <li><a href="#welcome" data-section="welcome">Welcome</a></li>
       <li><a href="#about" data-section="about">About Me</a></li>
+      <li><a href="#thought-leadership" data-section="thought-leadership">Thought Leadership</a></li>
+      <li><a href="#tech-strategy" data-section="tech-strategy">Tech Strategy</a></li>
       <li><a href="#projects" data-section="projects">Projects</a></li>
       <li><a href="#skills" data-section="skills">Skills</a></li>
-      <li><a href="#achievements" data-section="achievements">Achievements</a></li>
-      <li><a href="#articles" data-section="articles">Articles</a></li>
+      <li><a href="#gallery" data-section="gallery">Gallery</a></li>
       <li><a href="#contact" data-section="contact">Contact</a></li>
     </ul>
 
@@ -76,16 +72,16 @@
                 <span aria-hidden="true">📧</span> Email
               </button>
               <button type="button" class="hero-contact-btn" id="phone-btn" aria-expanded="false" aria-controls="phone-display">
-                <span aria-hidden="true">📱</span> Phone
+                <span aria-hidden="true">📱</span> Mobile
               </button>
-              <a href="https://www.linkedin.com/in/ramesh-sirimalla/" class="hero-contact-btn" target="_blank" rel="noopener">
-                <span aria-hidden="true">💼</span> LinkedIn
-              </a>
               <a href="https://github.com/sirijallu" class="hero-contact-btn" target="_blank" rel="noopener">
                 <span aria-hidden="true">💻</span> GitHub
               </a>
-              <a href="resume.html" class="hero-contact-btn" target="_blank" rel="noopener">
-                <span aria-hidden="true">📄</span> View Resume
+              <a href="https://www.linkedin.com/in/ramesh-sirimalla/" class="hero-contact-btn" target="_blank" rel="noopener">
+                <span aria-hidden="true">💼</span> LinkedIn
+              </a>
+              <a href="resume/Ramesh_Sirimalla_Resume.pdf" class="hero-contact-btn" target="_blank" rel="noopener">
+                <span aria-hidden="true">📄</span> Download CV
               </a>
             </div>
             <p class="contact-reveal" id="email-display" hidden>
@@ -94,15 +90,9 @@
             <p class="contact-reveal" id="phone-display" hidden>
               📱 <a href="tel:+19402977675">+1 940-297-7675</a>
             </p>
-
-            <ul class="hero-stats" aria-label="Career highlights">
-              <li><strong>20+</strong><span>Years Experience</span></li>
-              <li><strong>100+</strong><span>People Led</span></li>
-              <li><strong>15+</strong><span>Enterprise AI Solutions</span></li>
-            </ul>
           </div>
           <div class="hero-photo">
-            <img src="images/profile.jpg" alt="Portrait of Ramesh Sirimalla" width="200" height="200" class="profile-image-hero" fetchpriority="high">
+            <img src="images/profile.jpg" alt="Portrait of Ramesh Sirimalla" width="180" height="180" class="profile-image-hero" fetchpriority="high">
           </div>
         </div>
       </header>
@@ -114,269 +104,494 @@
 
           <div class="tab-nav" role="tablist" aria-label="About topics">
             <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="about-me" id="tab-about-me">About Me</button>
+            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="about-leadership" id="tab-about-leadership">My Leadership Style</button>
             <button class="tab-btn" role="tab" aria-selected="false" aria-controls="about-experience" id="tab-about-experience">Professional Experience</button>
-            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="about-education" id="tab-about-education">Education</button>
-            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="about-certifications" id="tab-about-certifications">Certifications</button>
+            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="about-certifications" id="tab-about-certifications">Certifications and Qualifications</button>
           </div>
 
           <!-- About Me -->
-          <div class="tab-panel active" id="about-me" role="tabpanel" aria-labelledby="tab-about-me">
-            <div class="about-grid">
-              <div class="about-text">
-                <p>
-                  I'm a Data &amp; AI leader with over two decades of experience building and running
-                  enterprise-scale data, cloud, and artificial intelligence platforms. My career has
-                  taken me from hands-on data engineering to leading global technology organizations,
-                  always with the same focus: translating data into decisions and AI into measurable
-                  business value.
-                </p>
-                <p>
-                  I've led cloud migrations spanning hundreds of applications, stood up enterprise
-                  Generative AI Centers of Excellence, and built data platforms that support thousands
-                  of analysts and decision-makers. I care deeply about responsible, well-governed AI,
-                  pragmatic architecture, and growing the next generation of technical leaders.
-                </p>
-                <p>
-                  When I'm not architecting platforms or mentoring teams, I write and speak about
-                  enterprise AI adoption, cloud strategy, and building high-performing data
-                  organizations.
-                </p>
+          <div class="tab-panel active about-text" id="about-me" role="tabpanel" aria-labelledby="tab-about-me">
+            <p>
+              I'm a Data &amp; AI leader with over two decades of experience building and running
+              enterprise-scale data, cloud, and artificial intelligence platforms. My career has
+              taken me from hands-on data engineering to leading global technology organizations,
+              always with the same focus: translating data into decisions and AI into measurable
+              business value.
+            </p>
+            <p>
+              I've led cloud migrations spanning hundreds of applications, stood up enterprise
+              Generative AI Centers of Excellence, and built data platforms that support thousands
+              of analysts and decision-makers. I care deeply about responsible, well-governed AI,
+              pragmatic architecture, and growing the next generation of technical leaders.
+            </p>
+            <p>
+              When I'm not architecting platforms or mentoring teams, I write and speak about
+              enterprise AI adoption, cloud strategy, and building high-performing data
+              organizations.
+            </p>
+          </div>
+
+          <!-- My Leadership Style -->
+          <div class="tab-panel" id="about-leadership" role="tabpanel" aria-labelledby="tab-about-leadership" hidden>
+            <p class="callout">
+              I lead by pairing a clear long-term vision with hands-on technical depth. I set
+              ambitious goals, give teams the context and autonomy to own them, and stay close
+              enough to the architecture to make sound trade-offs quickly. I believe the best
+              data and AI organizations are built on trust, transparency, and a bias for
+              shipping real business outcomes.
+            </p>
+
+            <h3 class="subsection-title">Key Leadership Principles</h3>
+            <div class="card-grid card-grid-3">
+              <div class="card accent-card">
+                <div class="card-icon" aria-hidden="true">🎯</div>
+                <h4>Strategic Thinking</h4>
+                <p>Connect data and AI investments directly to business outcomes, and plan for where the organization needs to be in three years—not just next quarter.</p>
               </div>
-              <aside class="about-summary">
-                <h3>Professional Summary</h3>
-                <ul class="summary-stats">
-                  <li><strong>20+</strong><span>Years in Data, Cloud &amp; AI</span></li>
-                  <li><strong>100+</strong><span>Engineers &amp; Data Professionals Led</span></li>
-                  <li><strong>3</strong><span>Major Cloud Platforms — AWS, Azure, GCP</span></li>
-                  <li><strong>200+</strong><span>Applications Migrated to Cloud</span></li>
-                  <li><strong>15+</strong><span>Enterprise GenAI / ML Solutions in Production</span></li>
-                </ul>
-              </aside>
+              <div class="card accent-card">
+                <div class="card-icon" aria-hidden="true">🔗</div>
+                <h4>Systems Thinking</h4>
+                <p>Look at platforms, processes, and people as one system, so a change in one area strengthens rather than breaks another.</p>
+              </div>
+              <div class="card accent-card">
+                <div class="card-icon" aria-hidden="true">🤝</div>
+                <h4>Servant Leadership</h4>
+                <p>Remove blockers, protect focus, and invest in each person's growth so teams can do the best work of their careers.</p>
+              </div>
+              <div class="card accent-card">
+                <div class="card-icon" aria-hidden="true">📊</div>
+                <h4>Data-Driven Decisions</h4>
+                <p>Use metrics and evidence—not opinions—to prioritize work, measure impact, and course-correct early.</p>
+              </div>
+              <div class="card accent-card">
+                <div class="card-icon" aria-hidden="true">🛡️</div>
+                <h4>Responsible Innovation</h4>
+                <p>Move fast with AI while building in governance, security, and ethics from day one rather than bolting them on later.</p>
+              </div>
+              <div class="card accent-card">
+                <div class="card-icon" aria-hidden="true">🌱</div>
+                <h4>Growing Leaders</h4>
+                <p>Mentor engineers into senior and leadership roles, and build succession into every team so success outlasts any one person.</p>
+              </div>
+            </div>
+
+            <h3 class="subsection-title">How I Apply Them</h3>
+            <div class="application-list">
+              <div class="application-item">
+                <div class="application-icon" aria-hidden="true">🧭</div>
+                <div>
+                  <h4>Clarity First</h4>
+                  <p>Every initiative starts with a clear problem statement, success metrics, and an owner.</p>
+                </div>
+              </div>
+              <div class="application-item">
+                <div class="application-icon" aria-hidden="true">🚀</div>
+                <div>
+                  <h4>Deliver Incrementally</h4>
+                  <p>Ship value in small, visible milestones instead of long programs that report progress only at the end.</p>
+                </div>
+              </div>
+              <div class="application-item">
+                <div class="application-icon" aria-hidden="true">💬</div>
+                <div>
+                  <h4>Open Communication</h4>
+                  <p>Share context openly, invite dissent, and explain the "why" behind decisions to executives and engineers alike.</p>
+                </div>
+              </div>
+              <div class="application-item">
+                <div class="application-icon" aria-hidden="true">🔁</div>
+                <div>
+                  <h4>Continuous Improvement</h4>
+                  <p>Run blameless retrospectives and treat every setback as input for a better next iteration.</p>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- Professional Experience -->
           <div class="tab-panel" id="about-experience" role="tabpanel" aria-labelledby="tab-about-experience" hidden>
-            <ol class="timeline">
-              <li class="timeline-item">
-                <span class="timeline-date">2021 — Present</span>
-                <h3>VP, Data &amp; AI</h3>
-                <p class="timeline-org">Global Financial Services Enterprise <em>(name confidential)</em></p>
-                <p>
-                  Own the enterprise data &amp; AI strategy for an 100+ person organization.
-                  Built the company's first GenAI Center of Excellence, established AI
-                  governance, and modernized the enterprise data platform to a cloud
-                  lakehouse.
-                </p>
-              </li>
-              <li class="timeline-item">
-                <span class="timeline-date">2017 — 2021</span>
-                <h3>Senior Director, Cloud &amp; Data Engineering</h3>
-                <p class="timeline-org">Global Retail &amp; Technology Enterprise <em>(name confidential)</em></p>
-                <p>
-                  Led the multi-year cloud migration program covering 200+ applications and
-                  stood up the modern data engineering function, including streaming and
-                  real-time analytics capabilities.
-                </p>
-              </li>
-              <li class="timeline-item">
-                <span class="timeline-date">2013 — 2017</span>
-                <h3>Director, Data Architecture</h3>
-                <p class="timeline-org">Enterprise Payments &amp; Banking Client <em>(name confidential)</em></p>
-                <p>
-                  Owned enterprise data architecture and BI modernization, replacing legacy
-                  data warehouses with scalable, governed data platforms.
-                </p>
-              </li>
-              <li class="timeline-item">
-                <span class="timeline-date">2008 — 2013</span>
-                <h3>Senior Manager, Data Engineering</h3>
-                <p class="timeline-org">Healthcare &amp; Insurance Client <em>(name confidential)</em></p>
-                <p>
-                  Built out the organization's first big data platform (Hadoop ecosystem)
-                  and led a team delivering enterprise reporting and analytics solutions.
-                </p>
-              </li>
-              <li class="timeline-item">
-                <span class="timeline-date">2003 — 2008</span>
-                <h3>Data Engineer / Consultant</h3>
-                <p class="timeline-org">Various Enterprise Clients</p>
-                <p>
-                  Delivered ETL, data warehousing, and business intelligence solutions
-                  across financial services and retail clients, building the technical
-                  foundation for a career in data.
-                </p>
-              </li>
-            </ol>
-          </div>
+            <div class="experience-item">
+              <h3 class="company-name">Global Financial Services Enterprise</h3>
+              <h4 class="job-title">VP, Data &amp; AI</h4>
+              <p class="job-meta">2021 – Present <span class="muted">· name confidential</span></p>
+              <p class="job-summary">
+                Own the enterprise data &amp; AI strategy for an 100+ person organization.
+              </p>
+              <ul class="job-highlights">
+                <li>Built the company's first GenAI Center of Excellence.</li>
+                <li>Established enterprise AI governance.</li>
+                <li>Modernized the enterprise data platform to a cloud lakehouse.</li>
+              </ul>
+            </div>
 
-          <!-- Education -->
-          <div class="tab-panel" id="about-education" role="tabpanel" aria-labelledby="tab-about-education" hidden>
-            <div class="card-grid card-grid-3">
-              <div class="card">
-                <div class="card-icon" aria-hidden="true">🎓</div>
-                <h3>Master of Business Administration (MBA)</h3>
-                <p>Technology &amp; Strategic Leadership</p>
-              </div>
-              <div class="card">
-                <div class="card-icon" aria-hidden="true">🎓</div>
-                <h3>M.S. in Computer Science</h3>
-                <p>Data Systems &amp; Distributed Computing</p>
-              </div>
-              <div class="card">
-                <div class="card-icon" aria-hidden="true">🎓</div>
-                <h3>B.S. in Computer Science</h3>
-                <p>Information Technology</p>
-              </div>
+            <div class="experience-item">
+              <h3 class="company-name">Global Retail &amp; Technology Enterprise</h3>
+              <h4 class="job-title">Senior Director, Cloud &amp; Data Engineering</h4>
+              <p class="job-meta">2017 – 2021 <span class="muted">· name confidential</span></p>
+              <ul class="job-highlights">
+                <li>Led the multi-year cloud migration program covering 200+ applications.</li>
+                <li>Stood up the modern data engineering function, including streaming and real-time analytics capabilities.</li>
+              </ul>
+            </div>
+
+            <div class="experience-item">
+              <h3 class="company-name">Enterprise Payments &amp; Banking Client</h3>
+              <h4 class="job-title">Director, Data Architecture</h4>
+              <p class="job-meta">2013 – 2017 <span class="muted">· name confidential</span></p>
+              <ul class="job-highlights">
+                <li>Owned enterprise data architecture and BI modernization.</li>
+                <li>Replaced legacy data warehouses with scalable, governed data platforms.</li>
+              </ul>
+            </div>
+
+            <h3 class="subsection-title">Earlier Career Experience</h3>
+
+            <div class="experience-item condensed">
+              <h3 class="company-name">Healthcare &amp; Insurance Client</h3>
+              <h4 class="job-title">Senior Manager, Data Engineering</h4>
+              <p class="job-meta">2008 – 2013 <span class="muted">· name confidential</span></p>
+              <p class="job-summary">
+                Built out the organization's first big data platform (Hadoop ecosystem)
+                and led a team delivering enterprise reporting and analytics solutions.
+              </p>
+            </div>
+
+            <div class="experience-item condensed">
+              <h3 class="company-name">Various Enterprise Clients</h3>
+              <h4 class="job-title">Data Engineer / Consultant</h4>
+              <p class="job-meta">2003 – 2008</p>
+              <p class="job-summary">
+                Delivered ETL, data warehousing, and business intelligence solutions
+                across financial services and retail clients, building the technical
+                foundation for a career in data.
+              </p>
             </div>
           </div>
 
-          <!-- Certifications -->
+          <!-- Certifications and Qualifications -->
           <div class="tab-panel" id="about-certifications" role="tabpanel" aria-labelledby="tab-about-certifications" hidden>
-            <div class="card-grid card-grid-3">
-              <div class="card cert-card">
+            <div class="card-grid card-grid-2">
+              <div class="card accent-card">
                 <h3>AWS Certified Solutions Architect – Professional</h3>
-                <p>Amazon Web Services</p>
+                <p class="cert-issuer">Amazon Web Services</p>
               </div>
-              <div class="card cert-card">
+              <div class="card accent-card">
                 <h3>Microsoft Certified: Azure Solutions Architect Expert</h3>
-                <p>Microsoft</p>
+                <p class="cert-issuer">Microsoft</p>
               </div>
-              <div class="card cert-card">
+              <div class="card accent-card">
                 <h3>Google Cloud Professional Cloud Architect</h3>
-                <p>Google Cloud</p>
+                <p class="cert-issuer">Google Cloud</p>
               </div>
-              <div class="card cert-card">
+              <div class="card accent-card">
                 <h3>Databricks Certified Data Engineer Professional</h3>
-                <p>Databricks</p>
+                <p class="cert-issuer">Databricks</p>
               </div>
-              <div class="card cert-card">
+              <div class="card accent-card">
                 <h3>Project Management Professional (PMP)</h3>
-                <p>Project Management Institute</p>
+                <p class="cert-issuer">Project Management Institute</p>
               </div>
-              <div class="card cert-card">
+              <div class="card accent-card">
                 <h3>Certified Scrum Master (CSM)</h3>
-                <p>Scrum Alliance</p>
+                <p class="cert-issuer">Scrum Alliance</p>
               </div>
-              <div class="card cert-card">
+              <div class="card accent-card">
                 <h3>TOGAF 9 Certified</h3>
-                <p>The Open Group</p>
+                <p class="cert-issuer">The Open Group</p>
+              </div>
+            </div>
+
+            <h3 class="subsection-title">Education</h3>
+            <div class="card-grid card-grid-3">
+              <div class="card accent-card">
+                <h3>Master of Business Administration (MBA)</h3>
+                <p class="cert-issuer">Technology &amp; Strategic Leadership</p>
+              </div>
+              <div class="card accent-card">
+                <h3>M.S. in Computer Science</h3>
+                <p class="cert-issuer">Data Systems &amp; Distributed Computing</p>
+              </div>
+              <div class="card accent-card">
+                <h3>B.S. in Computer Science</h3>
+                <p class="cert-issuer">Information Technology</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- ===================== Thought Leadership ===================== -->
+      <section id="thought-leadership" class="section" data-panel>
+        <div class="container">
+          <h2 class="section-title">Thought Leadership</h2>
+
+          <div class="tab-nav" role="tablist" aria-label="Thought leadership topics">
+            <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="tl-achievements" id="tab-tl-achievements">Achievements</button>
+            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tl-articles" id="tab-tl-articles">Articles</button>
+          </div>
+
+          <div class="tab-panel active" id="tl-achievements" role="tabpanel" aria-labelledby="tab-tl-achievements">
+            <div class="feature-list">
+              <div class="feature-item">
+                <h3>🚀 Built an enterprise GenAI CoE from 0 to 15+ production use cases</h3>
+                <p>Delivered in 18 months, with governance and reusable tooling adopted org-wide.</p>
+              </div>
+              <div class="feature-item">
+                <h3>☁️ Led a cloud migration program that cut infrastructure costs by 35%</h3>
+                <p>Across 200+ applications for a Fortune 500 enterprise.</p>
+              </div>
+              <div class="feature-item">
+                <h3>🎤 Frequent speaker at Data &amp; AI industry conferences</h3>
+                <p>Sharing lessons on enterprise AI adoption and cloud data platforms.</p>
+              </div>
+              <div class="feature-item">
+                <h3>✍️ Published thought leadership on enterprise AI transformation</h3>
+                <p>Articles on responsible AI, cloud strategy, and building data organizations.</p>
+              </div>
+              <div class="feature-item">
+                <h3>🧑‍🏫 Mentored 50+ engineers into senior and leadership roles</h3>
+                <p>Through structured mentorship and career development programs.</p>
+              </div>
+              <div class="feature-item">
+                <h3>🏆 Multiple internal Innovation &amp; Leadership Excellence awards</h3>
+                <p>Recognized for driving measurable business impact through technology.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="tl-articles" role="tabpanel" aria-labelledby="tab-tl-articles" hidden>
+            <div class="feature-list">
+              <div class="feature-item">
+                <h3>Building a Responsible GenAI Center of Excellence</h3>
+                <p>Lessons from standing up enterprise AI governance and platform capabilities.</p>
+                <span class="article-link">Coming soon</span>
+              </div>
+              <div class="feature-item">
+                <h3>From Data Warehouse to Lakehouse: A Practical Playbook</h3>
+                <p>A field guide to migrating legacy analytics platforms without disrupting the business.</p>
+                <span class="article-link">Coming soon</span>
+              </div>
+              <div class="feature-item">
+                <h3>Leading Technical Teams Through AI Transformation</h3>
+                <p>How to build trust and momentum when AI reshapes how teams work.</p>
+                <span class="article-link">Coming soon</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== Tech Strategy ===================== -->
+      <section id="tech-strategy" class="section" data-panel>
+        <div class="container">
+          <h2 class="section-title">Tech Strategy</h2>
+
+          <div class="tab-nav" role="tablist" aria-label="Tech strategy topics">
+            <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="ts-platform" id="tab-ts-platform">Data &amp; AI Platform Pillars</button>
+          </div>
+
+          <div class="tab-panel active" id="ts-platform" role="tabpanel" aria-labelledby="tab-ts-platform">
+            <p class="section-intro">
+              Five pillars I use to design, modernize, and run enterprise data and AI platforms
+              that stay reliable, secure, and cost-efficient as they scale.
+            </p>
+
+            <div class="card-grid card-grid-3">
+              <div class="card pillar-card">
+                <div class="pillar-head">
+                  <span class="pillar-icon" aria-hidden="true">🧱</span>
+                  <div><span class="pillar-num">Pillar 1</span><h3>Modern Data Foundation</h3></div>
+                </div>
+                <p class="pillar-lead">A single, governed lakehouse as the source of truth.</p>
+                <ul class="check-list">
+                  <li>Unify warehouse and lake workloads</li>
+                  <li>Model data once, reuse everywhere</li>
+                  <li>Support batch and streaming side by side</li>
+                </ul>
+              </div>
+              <div class="card pillar-card">
+                <div class="pillar-head">
+                  <span class="pillar-icon" aria-hidden="true">🛡️</span>
+                  <div><span class="pillar-num">Pillar 2</span><h3>Governance &amp; Security</h3></div>
+                </div>
+                <p class="pillar-lead">Trust built in, not bolted on.</p>
+                <ul class="check-list">
+                  <li>Fine-grained access controls and lineage</li>
+                  <li>Data quality checks in every pipeline</li>
+                  <li>Encryption and auditability by default</li>
+                </ul>
+              </div>
+              <div class="card pillar-card">
+                <div class="pillar-head">
+                  <span class="pillar-icon" aria-hidden="true">🤖</span>
+                  <div><span class="pillar-num">Pillar 3</span><h3>Responsible AI at Scale</h3></div>
+                </div>
+                <p class="pillar-lead">From pilots to production, safely.</p>
+                <ul class="check-list">
+                  <li>Reusable GenAI and MLOps platforms</li>
+                  <li>Model evaluation, monitoring, and guardrails</li>
+                  <li>Clear AI policies and review processes</li>
+                </ul>
+              </div>
+              <div class="card pillar-card">
+                <div class="pillar-head">
+                  <span class="pillar-icon" aria-hidden="true">💰</span>
+                  <div><span class="pillar-num">Pillar 4</span><h3>Cost Optimization</h3></div>
+                </div>
+                <p class="pillar-lead">Every dollar of cloud spend tied to value.</p>
+                <ul class="check-list">
+                  <li>FinOps practices and showback</li>
+                  <li>Right-size compute and storage</li>
+                  <li>Retire legacy platforms decisively</li>
+                </ul>
+              </div>
+              <div class="card pillar-card">
+                <div class="pillar-head">
+                  <span class="pillar-icon" aria-hidden="true">⚙️</span>
+                  <div><span class="pillar-num">Pillar 5</span><h3>Operational Excellence</h3></div>
+                </div>
+                <p class="pillar-lead">Platforms that run themselves.</p>
+                <ul class="check-list">
+                  <li>Infrastructure as code and CI/CD</li>
+                  <li>Observability with clear SLAs</li>
+                  <li>Automate recovery and repetitive toil</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="callout callout-center">
+              <h3>Why it matters</h3>
+              <p>Strong foundations let organizations adopt AI quickly without trading away trust, reliability, or cost control.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- ===================== Featured Projects ===================== -->
-      <section id="projects" class="section" data-panel>
+      <section id="projects" class="section section-alt" data-panel>
         <div class="container">
           <h2 class="section-title">Featured Projects</h2>
-          <p class="section-intro">
-            Employer and client names are anonymized for confidentiality; the scope,
-            approach, and outcomes reflect real engagements.
-          </p>
 
           <div class="tab-nav" role="tablist" aria-label="Projects">
-            <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="project-genai" id="tab-project-genai">GenAI Center of Excellence</button>
-            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="project-lakehouse" id="tab-project-lakehouse">Lakehouse Modernization</button>
-            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="project-fraud" id="tab-project-fraud">Real-Time Fraud Detection</button>
-            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="project-migration" id="tab-project-migration">Global Cloud Migration</button>
+            <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="project-genai" id="tab-project-genai">GenAI CoE</button>
+            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="project-lakehouse" id="tab-project-lakehouse">Lakehouse</button>
+            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="project-fraud" id="tab-project-fraud">Fraud Detection</button>
+            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="project-migration" id="tab-project-migration">Cloud Migration</button>
             <button class="tab-btn" role="tab" aria-selected="false" aria-controls="project-c360" id="tab-project-c360">Customer 360</button>
-            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="project-mlops" id="tab-project-mlops">Enterprise MLOps</button>
+            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="project-mlops" id="tab-project-mlops">MLOps</button>
           </div>
 
           <article class="tab-panel active project-detail" id="project-genai" role="tabpanel" aria-labelledby="tab-project-genai">
-            <img src="images/project-genai-coe.svg" alt="" class="project-media" loading="lazy">
-            <div class="project-body">
+            <div class="project-header">
+              <span class="project-badge">🧠 Generative AI</span>
               <h3>Enterprise GenAI Center of Excellence</h3>
-              <p>
-                Built a GenAI CoE from the ground up for a global financial services firm —
-                governance, LLMOps tooling, and a reusable platform that took the org from
-                zero to 15+ production use cases in 18 months.
-              </p>
-              <h4>Business Impact</h4>
-              <p class="project-outcome">15+ use cases shipped, reusable GenAI platform adopted org-wide.</p>
-              <h4>Technology Stack</h4>
+              <p class="project-subtitle">Taking a global financial services firm from zero to production AI</p>
+            </div>
+            <div class="stat-grid">
+              <div class="stat-card"><div class="stat-icon" aria-hidden="true">🚀</div><strong>15+</strong><span>Production Use Cases</span></div>
+              <div class="stat-card"><div class="stat-icon" aria-hidden="true">⏱️</div><strong>18 mo</strong><span>Zero to Production</span></div>
+              <div class="stat-card"><div class="stat-icon" aria-hidden="true">🏢</div><strong>Org-wide</strong><span>Platform Adoption</span></div>
+            </div>
+            <div class="detail-card">
+              <h4><span class="detail-icon" aria-hidden="true">🎯</span> Overview</h4>
+              <p>Built a GenAI CoE from the ground up — governance, LLMOps tooling, and a reusable platform that took the org from zero to 15+ production use cases in 18 months.</p>
+              <h4><span class="detail-icon" aria-hidden="true">🛠️</span> Technology Stack</h4>
               <ul class="tag-list"><li>LLMs</li><li>RAG</li><li>Azure OpenAI</li><li>Governance</li></ul>
             </div>
           </article>
 
           <article class="tab-panel project-detail" id="project-lakehouse" role="tabpanel" aria-labelledby="tab-project-lakehouse" hidden>
-            <img src="images/project-lakehouse.svg" alt="" class="project-media" loading="lazy">
-            <div class="project-body">
+            <div class="project-header">
+              <span class="project-badge">🏞️ Data Platform</span>
               <h3>Cloud Data Lakehouse Modernization</h3>
-              <p>
-                Led migration from a legacy on-prem data warehouse to a modern cloud
-                lakehouse (Databricks + Snowflake), serving 500+ analysts across the
-                enterprise.
-              </p>
-              <h4>Business Impact</h4>
-              <p class="project-outcome">70% reduction in report latency, unified data model.</p>
-              <h4>Technology Stack</h4>
+              <p class="project-subtitle">Replacing a legacy on-prem warehouse with a modern cloud lakehouse</p>
+            </div>
+            <div class="stat-grid">
+              <div class="stat-card"><div class="stat-icon" aria-hidden="true">⚡</div><strong>70%</strong><span>Lower Report Latency</span></div>
+              <div class="stat-card"><div class="stat-icon" aria-hidden="true">👥</div><strong>500+</strong><span>Analysts Served</span></div>
+              <div class="stat-card"><div class="stat-icon" aria-hidden="true">🧩</div><strong>1</strong><span>Unified Data Model</span></div>
+            </div>
+            <div class="detail-card">
+              <h4><span class="detail-icon" aria-hidden="true">🎯</span> Overview</h4>
+              <p>Led migration from a legacy on-prem data warehouse to a modern cloud lakehouse (Databricks + Snowflake), serving 500+ analysts across the enterprise.</p>
+              <h4><span class="detail-icon" aria-hidden="true">🛠️</span> Technology Stack</h4>
               <ul class="tag-list"><li>Databricks</li><li>Snowflake</li><li>Spark</li><li>dbt</li></ul>
             </div>
           </article>
 
           <article class="tab-panel project-detail" id="project-fraud" role="tabpanel" aria-labelledby="tab-project-fraud" hidden>
-            <img src="images/project-fraud.svg" alt="" class="project-media" loading="lazy">
-            <div class="project-body">
+            <div class="project-header">
+              <span class="project-badge">🛡️ Real-Time ML</span>
               <h3>Real-Time Fraud Detection Platform</h3>
-              <p>
-                Architected a streaming ML platform for transaction fraud detection,
-                combining a feature store with low-latency inference for a payments
-                business.
-              </p>
-              <h4>Business Impact</h4>
-              <p class="project-outcome">30% reduction in fraud losses, 40% fewer false positives.</p>
-              <h4>Technology Stack</h4>
+              <p class="project-subtitle">Streaming ML for transaction fraud in a payments business</p>
+            </div>
+            <div class="stat-grid">
+              <div class="stat-card"><div class="stat-icon" aria-hidden="true">📉</div><strong>30%</strong><span>Lower Fraud Losses</span></div>
+              <div class="stat-card"><div class="stat-icon" aria-hidden="true">🎯</div><strong>40%</strong><span>Fewer False Positives</span></div>
+            </div>
+            <div class="detail-card">
+              <h4><span class="detail-icon" aria-hidden="true">🎯</span> Overview</h4>
+              <p>Architected a streaming ML platform for transaction fraud detection, combining a feature store with low-latency inference for a payments business.</p>
+              <h4><span class="detail-icon" aria-hidden="true">🛠️</span> Technology Stack</h4>
               <ul class="tag-list"><li>Kafka</li><li>Spark Streaming</li><li>Feature Store</li><li>MLOps</li></ul>
             </div>
           </article>
 
           <article class="tab-panel project-detail" id="project-migration" role="tabpanel" aria-labelledby="tab-project-migration" hidden>
-            <img src="images/project-cloud-migration.svg" alt="" class="project-media" loading="lazy">
-            <div class="project-body">
+            <div class="project-header">
+              <span class="project-badge">☁️ Cloud</span>
               <h3>Global Cloud Migration Program</h3>
-              <p>
-                Directed a multi-year migration of 200+ applications to AWS and Azure for
-                a Fortune 500 enterprise, including landing zones, governance, and FinOps.
-              </p>
-              <h4>Business Impact</h4>
-              <p class="project-outcome">35% infrastructure cost reduction.</p>
-              <h4>Technology Stack</h4>
+              <p class="project-subtitle">A multi-year move to AWS and Azure for a Fortune 500 enterprise</p>
+            </div>
+            <div class="stat-grid">
+              <div class="stat-card"><div class="stat-icon" aria-hidden="true">📦</div><strong>200+</strong><span>Applications Migrated</span></div>
+              <div class="stat-card"><div class="stat-icon" aria-hidden="true">💰</div><strong>35%</strong><span>Infrastructure Cost Reduction</span></div>
+            </div>
+            <div class="detail-card">
+              <h4><span class="detail-icon" aria-hidden="true">🎯</span> Overview</h4>
+              <p>Directed a multi-year migration of 200+ applications to AWS and Azure for a Fortune 500 enterprise, including landing zones, governance, and FinOps.</p>
+              <h4><span class="detail-icon" aria-hidden="true">🛠️</span> Technology Stack</h4>
               <ul class="tag-list"><li>AWS</li><li>Azure</li><li>Terraform</li><li>FinOps</li></ul>
             </div>
           </article>
 
           <article class="tab-panel project-detail" id="project-c360" role="tabpanel" aria-labelledby="tab-project-c360" hidden>
-            <img src="images/project-customer360.svg" alt="" class="project-media" loading="lazy">
-            <div class="project-body">
+            <div class="project-header">
+              <span class="project-badge">🛍️ Personalization</span>
               <h3>AI-Driven Customer 360 Platform</h3>
-              <p>
-                Delivered a unified customer data platform with ML-driven personalization
-                for a large retail brand, connecting 12+ source systems.
-              </p>
-              <h4>Business Impact</h4>
-              <p class="project-outcome">25% lift in engagement conversion.</p>
-              <h4>Technology Stack</h4>
+              <p class="project-subtitle">A unified customer view with ML-driven personalization for a retail brand</p>
+            </div>
+            <div class="stat-grid">
+              <div class="stat-card"><div class="stat-icon" aria-hidden="true">📈</div><strong>25%</strong><span>Engagement Conversion Lift</span></div>
+              <div class="stat-card"><div class="stat-icon" aria-hidden="true">🔌</div><strong>12+</strong><span>Source Systems Connected</span></div>
+            </div>
+            <div class="detail-card">
+              <h4><span class="detail-icon" aria-hidden="true">🎯</span> Overview</h4>
+              <p>Delivered a unified customer data platform with ML-driven personalization for a large retail brand, connecting 12+ source systems.</p>
+              <h4><span class="detail-icon" aria-hidden="true">🛠️</span> Technology Stack</h4>
               <ul class="tag-list"><li>CDP</li><li>ML Personalization</li><li>Snowflake</li><li>Airflow</li></ul>
             </div>
           </article>
 
           <article class="tab-panel project-detail" id="project-mlops" role="tabpanel" aria-labelledby="tab-project-mlops" hidden>
-            <img src="images/project-mlops.svg" alt="" class="project-media" loading="lazy">
-            <div class="project-body">
+            <div class="project-header">
+              <span class="project-badge">⚙️ MLOps</span>
               <h3>Enterprise MLOps Platform</h3>
-              <p>
-                Established standardized CI/CD/CT pipelines and model registry practices
-                across 10+ data science teams for a healthcare payer.
-              </p>
-              <h4>Business Impact</h4>
-              <p class="project-outcome">Model deployment time cut from months to days.</p>
-              <h4>Technology Stack</h4>
+              <p class="project-subtitle">Standardizing how a healthcare payer ships machine learning</p>
+            </div>
+            <div class="stat-grid">
+              <div class="stat-card"><div class="stat-icon" aria-hidden="true">👩‍🔬</div><strong>10+</strong><span>Data Science Teams</span></div>
+              <div class="stat-card"><div class="stat-icon" aria-hidden="true">⏩</div><strong>Months → Days</strong><span>Model Deployment Time</span></div>
+            </div>
+            <div class="detail-card">
+              <h4><span class="detail-icon" aria-hidden="true">🎯</span> Overview</h4>
+              <p>Established standardized CI/CD/CT pipelines and model registry practices across 10+ data science teams for a healthcare payer.</p>
+              <h4><span class="detail-icon" aria-hidden="true">🛠️</span> Technology Stack</h4>
               <ul class="tag-list"><li>MLflow</li><li>Kubernetes</li><li>CI/CD</li><li>Model Registry</li></ul>
             </div>
           </article>
+
+          <p class="section-note">Employer and client names are anonymized for confidentiality; the scope, approach, and outcomes reflect real engagements.</p>
         </div>
       </section>
 
@@ -385,169 +600,74 @@
         <div class="container">
           <h2 class="section-title">Skills &amp; Technologies</h2>
 
-          <div class="card-grid card-grid-3">
-            <div class="card skill-card">
-              <div class="card-icon" aria-hidden="true">⚙️</div>
-              <h3>Technical Skills</h3>
-              <ul class="tag-list">
-                <li>AWS</li><li>Azure</li><li>Google Cloud</li>
-                <li>Snowflake</li><li>Databricks</li><li>BigQuery</li>
+          <div class="skills-grid">
+            <div class="skill-column">
+              <h3>Data Engineering</h3>
+              <ul class="check-list">
                 <li>Apache Spark</li><li>Kafka</li><li>Airflow</li><li>dbt</li>
+                <li>Databricks</li><li>Snowflake</li><li>BigQuery</li>
+              </ul>
+            </div>
+            <div class="skill-column">
+              <h3>Cloud Platforms</h3>
+              <ul class="check-list">
+                <li>AWS</li><li>Azure</li><li>Google Cloud</li>
+                <li>Terraform</li><li>Docker</li><li>Kubernetes</li><li>CI/CD</li>
+              </ul>
+            </div>
+            <div class="skill-column">
+              <h3>Programming</h3>
+              <ul class="check-list">
                 <li>Python</li><li>SQL</li><li>Scala</li><li>Java</li>
-                <li>Docker</li><li>Kubernetes</li><li>Terraform</li><li>CI/CD</li>
               </ul>
             </div>
-            <div class="card skill-card">
-              <div class="card-icon" aria-hidden="true">🤖</div>
-              <h3>AI Skills</h3>
-              <ul class="tag-list">
-                <li>Generative AI &amp; LLMs</li>
-                <li>Agentic AI Systems</li>
-                <li>MLOps &amp; Model Lifecycle</li>
-                <li>NLP</li>
-                <li>Computer Vision</li>
-                <li>Feature Stores</li>
-                <li>Responsible AI &amp; Governance</li>
-                <li>AI Strategy &amp; Roadmapping</li>
-                <li>Prompt Engineering</li>
+            <div class="skill-column">
+              <h3>AI/ML</h3>
+              <ul class="check-list">
+                <li>Generative AI &amp; LLMs</li><li>Agentic AI Systems</li>
+                <li>MLOps &amp; Model Lifecycle</li><li>NLP</li><li>Computer Vision</li>
+                <li>Feature Stores</li><li>Prompt Engineering</li>
               </ul>
             </div>
-            <div class="card skill-card">
-              <div class="card-icon" aria-hidden="true">🧭</div>
-              <h3>Leadership Skills</h3>
-              <ul class="tag-list">
-                <li>Team Building &amp; Mentoring</li>
-                <li>Executive Communication</li>
-                <li>P&amp;L / Budget Ownership</li>
-                <li>Vendor &amp; Partner Management</li>
-                <li>Change Management</li>
-                <li>Strategic Planning &amp; OKRs</li>
-                <li>Hiring &amp; Org Design</li>
-                <li>Cross-Functional Alignment</li>
+            <div class="skill-column">
+              <h3>Leadership</h3>
+              <ul class="check-list">
+                <li>Team Building &amp; Mentoring</li><li>Executive Communication</li>
+                <li>P&amp;L / Budget Ownership</li><li>Vendor &amp; Partner Management</li>
+                <li>Strategic Planning &amp; OKRs</li><li>Hiring &amp; Org Design</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- ===================== Achievements ===================== -->
-      <section id="achievements" class="section" data-panel>
+      <!-- ===================== Gallery ===================== -->
+      <section id="gallery" class="section" data-panel>
         <div class="container">
-          <h2 class="section-title">Achievements</h2>
-
-          <div class="card-grid card-grid-3">
-            <div class="card">
-              <div class="card-icon" aria-hidden="true">🚀</div>
-              <h3>Built an enterprise GenAI CoE from 0 to 15+ production use cases</h3>
-              <p>Delivered in 18 months, with governance and reusable tooling adopted org-wide.</p>
-            </div>
-            <div class="card">
-              <div class="card-icon" aria-hidden="true">☁️</div>
-              <h3>Led a cloud migration program that cut infrastructure costs by 35%</h3>
-              <p>Across 200+ applications for a Fortune 500 enterprise.</p>
-            </div>
-            <div class="card">
-              <div class="card-icon" aria-hidden="true">🎤</div>
-              <h3>Frequent speaker at Data &amp; AI industry conferences</h3>
-              <p>Sharing lessons on enterprise AI adoption and cloud data platforms.</p>
-            </div>
-            <div class="card">
-              <div class="card-icon" aria-hidden="true">✍️</div>
-              <h3>Published thought leadership on enterprise AI transformation</h3>
-              <p>Articles on responsible AI, cloud strategy, and building data organizations.</p>
-            </div>
-            <div class="card">
-              <div class="card-icon" aria-hidden="true">🧑‍🏫</div>
-              <h3>Mentored 50+ engineers into senior and leadership roles</h3>
-              <p>Through structured mentorship and career development programs.</p>
-            </div>
-            <div class="card">
-              <div class="card-icon" aria-hidden="true">🏆</div>
-              <h3>Multiple internal Innovation &amp; Leadership Excellence awards</h3>
-              <p>Recognized for driving measurable business impact through technology.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ===================== Articles ===================== -->
-      <section id="articles" class="section" data-panel>
-        <div class="container">
-          <h2 class="section-title">Articles &amp; Thought Leadership</h2>
-
-          <div class="card-grid card-grid-3">
-            <div class="card article-card">
-              <h3>Building a Responsible GenAI Center of Excellence</h3>
-              <p>Lessons from standing up enterprise AI governance and platform capabilities.</p>
-              <span class="article-link">Coming soon</span>
-            </div>
-            <div class="card article-card">
-              <h3>From Data Warehouse to Lakehouse: A Practical Playbook</h3>
-              <p>A field guide to migrating legacy analytics platforms without disrupting the business.</p>
-              <span class="article-link">Coming soon</span>
-            </div>
-            <div class="card article-card">
-              <h3>Leading Technical Teams Through AI Transformation</h3>
-              <p>How to build trust and momentum when AI reshapes how teams work.</p>
-              <span class="article-link">Coming soon</span>
-            </div>
+          <h2 class="section-title">Gallery</h2>
+          <div class="empty-state">
+            <div class="empty-icon" aria-hidden="true">📸</div>
+            <h3>Talks, videos &amp; event photos coming soon</h3>
+            <p>Conference talks, workshops, and team events will be shared here.</p>
           </div>
         </div>
       </section>
 
       <!-- ===================== Contact ===================== -->
-      <section id="contact" class="section" data-panel>
+      <section id="contact" class="section section-alt" data-panel>
         <div class="container">
           <h2 class="section-title">Get In Touch</h2>
           <p class="section-intro">
-            Open to advisory roles, speaking engagements, and senior data &amp; AI leadership
-            opportunities. The fastest way to reach me is email.
+            I'm always interested in hearing about new opportunities, advisory roles,
+            and speaking engagements.
           </p>
 
-          <div class="contact-grid">
-            <ul class="contact-list">
-              <li>
-                <span class="contact-icon" aria-hidden="true">📧</span>
-                <div><span class="contact-label">Email</span>
-                <a href="mailto:rsirimalla82@gmail.com">rsirimalla82@gmail.com</a></div>
-              </li>
-              <li>
-                <span class="contact-icon" aria-hidden="true">📱</span>
-                <div><span class="contact-label">Phone</span>
-                <a href="tel:+19402977675">+1 940-297-7675</a></div>
-              </li>
-              <li>
-                <span class="contact-icon" aria-hidden="true">💼</span>
-                <div><span class="contact-label">LinkedIn</span>
-                <a href="https://www.linkedin.com/in/ramesh-sirimalla/" target="_blank" rel="noopener">linkedin.com/in/ramesh-sirimalla</a></div>
-              </li>
-              <li>
-                <span class="contact-icon" aria-hidden="true">💻</span>
-                <div><span class="contact-label">GitHub</span>
-                <a href="https://github.com/sirijallu" target="_blank" rel="noopener">github.com/sirijallu</a></div>
-              </li>
-              <li>
-                <span class="contact-icon" aria-hidden="true">🌎</span>
-                <div><span class="contact-label">Location</span>
-                <span>Available for remote &amp; global engagements</span></div>
-              </li>
-            </ul>
-
-            <form class="card contact-form" action="mailto:rsirimalla82@gmail.com" method="post" enctype="text/plain">
-              <div class="form-row">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required autocomplete="name">
-              </div>
-              <div class="form-row">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required autocomplete="email">
-              </div>
-              <div class="form-row">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
+          <div class="contact-links">
+            <a href="mailto:rsirimalla82@gmail.com" class="contact-btn"><span aria-hidden="true">📧</span> rsirimalla82@gmail.com</a>
+            <a href="tel:+19402977675" class="contact-btn"><span aria-hidden="true">📱</span> +1 940-297-7675</a>
+            <a href="https://github.com/sirijallu" class="contact-btn" target="_blank" rel="noopener"><span aria-hidden="true">💻</span> GitHub</a>
+            <a href="https://www.linkedin.com/in/ramesh-sirimalla/" class="contact-btn" target="_blank" rel="noopener"><span aria-hidden="true">💼</span> LinkedIn</a>
+            <a href="resume/Ramesh_Sirimalla_Resume.pdf" class="contact-btn" target="_blank" rel="noopener"><span aria-hidden="true">📄</span> Download CV</a>
           </div>
         </div>
       </section>
