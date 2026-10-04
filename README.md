@@ -19,7 +19,7 @@ ramesh_sirimalla_profile/
 │   └── resume.css        Styles for the resume page
 ├── js/
 │   └── main.js           Section switching, tabs, mobile sidebar, dark mode
-├── images/                Profile photo, favicon, and project thumbnails (SVG)
+├── images/                Profile photo (profile.jpg), favicon, and project thumbnails (SVG)
 ├── assets/                 Reserved for future static assets
 ├── resume/
 │   └── Ramesh_Sirimalla_Resume.pdf   Downloadable resume
@@ -32,9 +32,6 @@ ramesh_sirimalla_profile/
 
 A few placeholders only you can fill in:
 
-- **Photo** — `images/profile.svg` is a placeholder initials avatar. Replace it
-  with a real photo (e.g. `images/profile.jpg`) and update the `src` on the
-  `<img class="hero-photo">` element in `index.html`.
 - **Employer names** — work history in `index.html` and `resume.html` marked
   `(name confidential)` — swap in real company names if you want them public.
 - **University names** — the Education section currently lists degree types
