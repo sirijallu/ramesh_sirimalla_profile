@@ -107,14 +107,16 @@ function initTabs() {
 }
 
 // ---------------------------------------------------------
-// Hero "Email" button reveals the address
+// Hero "Email" / "Phone" buttons reveal the details
 // ---------------------------------------------------------
-function initEmailReveal() {
-  const btn = document.getElementById('email-btn');
-  const display = document.getElementById('email-display');
-  btn.addEventListener('click', () => {
-    display.hidden = !display.hidden;
-    btn.setAttribute('aria-expanded', String(!display.hidden));
+function initContactReveal() {
+  ['email', 'phone'].forEach((kind) => {
+    const btn = document.getElementById(kind + '-btn');
+    const display = document.getElementById(kind + '-display');
+    btn.addEventListener('click', () => {
+      display.hidden = !display.hidden;
+      btn.setAttribute('aria-expanded', String(!display.hidden));
+    });
   });
 }
 
@@ -130,6 +132,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileSidebar();
   initSections();
   initTabs();
-  initEmailReveal();
+  initContactReveal();
   initYear();
 });

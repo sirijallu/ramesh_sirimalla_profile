@@ -165,7 +165,7 @@ main { flex: 1; }
 
 .contact-reveal {
   display: inline-block;
-  margin: 1rem 0 0; padding: 0.7rem 1rem;
+  margin: 1rem 0.75rem 0 0; padding: 0.7rem 1rem;
   background: var(--primary-soft); border-radius: 8px;
   font-weight: 500;
 }
