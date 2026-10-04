@@ -1,6 +1,6 @@
 # Ramesh Sirimalla — Portfolio Website
 
-A static, single-page portfolio site for a Data & AI Leader, built with plain
+A static, single-page portfolio site for a Forward Deployed Engineer, built with plain
 HTML5, CSS3, and vanilla JavaScript. Designed to be hosted for free on GitHub
 Pages.
 
@@ -14,6 +14,7 @@ ramesh_sirimalla_profile/
 │                        about (leadership style, experience, certifications
 │                        & education tabs), thought leadership, tech strategy,
 │                        projects, skills, gallery, contact
+│                        (content sourced from LinkedIn + resume)
 ├── resume.html          Printable resume page (also downloadable as PDF)
 ├── css/
 │   ├── style.css        Site-wide styles (light + dark theme)
@@ -33,10 +34,6 @@ ramesh_sirimalla_profile/
 
 A few placeholders only you can fill in:
 
-- **Employer names** — work history in `index.html` and `resume.html` marked
-  `(name confidential)` — swap in real company names if you want them public.
-- **University names** — the Education section currently lists degree types
-  only; add institution names in `index.html`.
 - **Contact form** — uses a `mailto:` action, which opens the visitor's email
   client (works without a backend, but isn't as reliable as a hosted form
   service). Consider swapping in [Formspree](https://formspree.io) or a
