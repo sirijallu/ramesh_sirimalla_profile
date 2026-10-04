@@ -39,8 +39,6 @@ A few placeholders only you can fill in:
 - **University names** — the Education section currently lists degree types
   only; add institution names in `index.html`.
 - **Phone number** — not currently listed; add to the Contact section if desired.
-- **Social links** — LinkedIn/GitHub links in the Contact section and footer
-  currently point to placeholder URLs; confirm they match your real profiles.
 - **Contact form** — uses a `mailto:` action, which opens the visitor's email
   client (works without a backend, but isn't as reliable as a hosted form
   service). Consider swapping in [Formspree](https://formspree.io) or a

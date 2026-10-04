@@ -50,6 +50,7 @@ body {
 .resume-header h1 { margin: 0 0 0.25rem; font-size: 2rem; }
 .resume-title { color: var(--color-text-muted); margin: 0 0 0.75rem; font-weight: 600; }
 .resume-contact { list-style: none; display: flex; gap: 1.5rem; padding: 0; margin: 0; font-size: 0.9rem; }
+.resume-contact a { color: inherit; text-decoration: none; }
 
 section { margin-bottom: 1.75rem; }
 h2 {
