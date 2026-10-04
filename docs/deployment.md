@@ -1,16 +1,16 @@
 # Deployment — GitHub Pages
 
-This site is deployed to: **https://sirijallu.github.io/portfolio-demo2/**
+This site is deployed to: **https://sirijallu.github.io/ramesh_sirimalla_profile/**
 
 ## How it's hosted
 
-The repository [`sirijallu/portfolio-demo2`](https://github.com/sirijallu/portfolio-demo2)
+The repository [`sirijallu/ramesh_sirimalla_profile`](https://github.com/sirijallu/ramesh_sirimalla_profile)
 serves `index.html` directly from the root of the `main` branch via GitHub
 Pages. There is no build step — GitHub Pages serves the static files as-is.
 
 ## One-time setup (already done)
 
-1. Repository created at `github.com/sirijallu/portfolio-demo2`.
+1. Repository created at `github.com/sirijallu/ramesh_sirimalla_profile`.
 2. Local project pushed to `main`.
 3. GitHub Pages enabled: **Settings → Pages → Source: Deploy from a branch →
    Branch: `main` / root**.

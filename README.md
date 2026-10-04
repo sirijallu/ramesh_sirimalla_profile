@@ -4,12 +4,12 @@ A static, single-page portfolio site for a Data & AI Leader, built with plain
 HTML5, CSS3, and vanilla JavaScript. Designed to be hosted for free on GitHub
 Pages.
 
-**Live site:** https://sirijallu.github.io/portfolio-demo2/
+**Live site:** https://sirijallu.github.io/ramesh_sirimalla_profile/
 
 ## Folder structure
 
 ```
-portfolio-demo2/
+ramesh_sirimalla_profile/
 ├── index.html          Homepage — hero, about, skills, projects, experience,
 │                        certifications, achievements, articles, contact
 ├── resume.html          Printable resume page (also downloadable as PDF)
