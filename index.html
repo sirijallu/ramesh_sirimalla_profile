@@ -223,6 +223,7 @@
                 <li>Connected the agents to the federal TCPA and Do Not Call (DNC) lists through the Model Context Protocol (MCP), so every outreach decision is checked against current federal data.</li>
                 <li>Owned the solution end to end with business stakeholders, from development through production deployment, delivering real-time compliance alerts and an up-to-date dashboard for the business.</li>
                 <li>Developed a model that uses CVS Health's internal NLP / LLM model to understand and respond to patient replies from across the country on CVS's production SMS short code.</li>
+                <li>Detects the intent of every reply and responds automatically: opt-outs (STOP), opt-ins (JOIN), UNDO, REFILL, HELP, YES/NO confirmations for refills and appointments, and free-text patient questions.</li>
                 <li>Lead engineering teams building healthcare solutions and mentor junior engineers on best practices.</li>
               </ul>
             </div>
@@ -482,6 +483,7 @@
 
           <div class="tab-nav" role="tablist" aria-label="Projects">
             <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="project-compliance" id="tab-project-compliance">Compliance AI Agents</button>
+            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="project-replies" id="tab-project-replies">Patient Reply AI</button>
             <button class="tab-btn" role="tab" aria-selected="false" aria-controls="project-notify" id="tab-project-notify">Patient Notifications</button>
             <button class="tab-btn" role="tab" aria-selected="false" aria-controls="project-rocm" id="tab-project-rocm">ROCM &amp; Patient APIs</button>
             <button class="tab-btn" role="tab" aria-selected="false" aria-controls="project-flink" id="tab-project-flink">Streaming POCs</button>
@@ -512,6 +514,28 @@
               </ul>
               <h4><span class="detail-icon" aria-hidden="true">🛠️</span> Technology Stack</h4>
               <ul class="tag-list"><li>LangGraph</li><li>RAG</li><li>Model Context Protocol</li><li>Multi-Agent AI</li></ul>
+            </div>
+          </article>
+
+          <article class="tab-panel project-detail" id="project-replies" role="tabpanel" aria-labelledby="tab-project-replies" hidden>
+            <div class="project-header">
+              <span class="project-badge">💬 CVS Health · NLP / LLM</span>
+              <h3>AI-Powered Patient Reply Handling</h3>
+              <p class="project-subtitle">Understanding and answering patient replies on CVS's production SMS short code</p>
+            </div>
+            <div class="stat-grid">
+              <div class="stat-card"><div class="stat-icon" aria-hidden="true">🔁</div><strong>Automatic</strong><span>Intent Detection &amp; Responses</span></div>
+              <div class="stat-card"><div class="stat-icon" aria-hidden="true">🔤</div><strong>7+ Reply Types</strong><span>STOP, JOIN, UNDO, REFILL, HELP, YES/NO, free text</span></div>
+              <div class="stat-card"><div class="stat-icon" aria-hidden="true">🇺🇸</div><strong>Nationwide</strong><span>Patient Replies in Production</span></div>
+            </div>
+            <div class="detail-card">
+              <h4><span class="detail-icon" aria-hidden="true">🎯</span> What I Built</h4>
+              <ul class="job-highlights">
+                <li>Developed a model that uses CVS Health's internal NLP / LLM model to understand and respond to patient replies from across the country on CVS's production SMS short code.</li>
+                <li>Detects the intent of every reply and responds automatically: opt-outs (STOP), opt-ins (JOIN), UNDO, REFILL, HELP, YES/NO confirmations for refills and appointments, and free-text patient questions.</li>
+              </ul>
+              <h4><span class="detail-icon" aria-hidden="true">🛠️</span> Technology Stack</h4>
+              <ul class="tag-list"><li>NLP</li><li>LLM</li><li>Intent Detection</li><li>SMS Short Code</li></ul>
             </div>
           </article>
 
