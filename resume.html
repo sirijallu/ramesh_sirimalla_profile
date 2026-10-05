@@ -74,8 +74,7 @@
 
         <p class="resume-project">Technical Leadership</p>
         <ul>
-          <li>Lead engineering teams delivering healthcare solutions, and mentor junior engineers on streaming design, best practices, and technical skills.</li>
-          <li>Partner with product, business, and cross-functional teams to turn requirements into production features for patients and customers.</li>
+          <li>Lead engineering teams delivering healthcare solutions with product and business partners, and mentor junior engineers on streaming design, best practices, and technical skills.</li>
         </ul>
       </article>
 
@@ -98,7 +97,6 @@
         <p class="resume-project">Engineering Practices</p>
         <ul>
           <li>Led code reviews to maintain quality standards and compliance with healthcare industry regulations.</li>
-          <li>Improved team workflows and delivery processes to increase operational efficiency.</li>
         </ul>
       </article>
 
@@ -121,8 +119,14 @@
           <span>Jun 2018 — Dec 2018</span>
         </div>
         <p class="resume-org">CBRE — Dallas, TX</p>
+        <p class="resume-project">Sequentra Real Estate Data Integration</p>
         <ul>
-          <li>Developed Kafka Connect, KSQL, and KStream services for real-time dashboards, plus Splunk and Grafana reporting.</li>
+          <li>Built the Kafka-based integration that streams data from <strong>Sequentra</strong>, CBRE's cloud corporate real estate platform (properties, transactions, projects, occupancy, and space management), to the external <strong>LeaseAccelerator</strong> lease-accounting system through Kafka messages and in-house microservices.</li>
+          <li>Implemented complex <strong>Confluent Kafka producer</strong> use cases publishing <strong>3 million records</strong> into the Kafka cluster.</li>
+          <li>Built <strong>pub-sub</strong> producer and consumer services for payments, reports, occupancies, and other use cases, updating customer applications in real time.</li>
+          <li>Implemented <strong>replay and retry</strong> logic for business needs, with consumers that reset offsets using the Kafka <strong>consumer seek API</strong>.</li>
+          <li>Worked closely with <strong>data scientists</strong>, providing the data inputs required by business requirements, and took part in application design document (ADD) discussions with the strategic architect.</li>
+          <li>Built a proof of concept provisioning AWS infrastructure with <strong>Terraform</strong>, and worked on <strong>CI/CD</strong> pipelines with DevOps tools.</li>
         </ul>
       </article>
 
@@ -151,19 +155,18 @@
           <span>Nov 2011 — Mar 2013</span>
         </div>
         <p class="resume-org">Pearson VUE — Iowa City, IA</p>
+        <ul>
+          <li>Built the <strong>fee-processing system</strong> for the <strong>NBPTS National Board Certification</strong> program (about 55,000 certified teachers and counselors), from requirements and design documents (FSD, SDD, HLD/LLD) through <strong>go-live and stabilization</strong>, then rolled it out to other brands.</li>
+          <li>Developed the core <strong>journal-entry flow</strong> and about <strong>10 use cases</strong> (fund distribution, scholarships, approvals, third-party payer setup), plus journal-entry reports and stored procedures.</li>
+          <li>Built <strong>CyberSource</strong> credit-card and eCheck reconciliation, and fixed Hosted Order Page timeouts with a POST URL integration (Java, Struts, EJB, Ajax, SOAP web services).</li>
+        </ul>
       </article>
     </section>
 
     <section>
-      <h2>Education</h2>
+      <h2>Education &amp; Certifications</h2>
       <p><strong>Bachelor of Engineering, Computer Science</strong> — MVSR Engineering College (Osmania University), Hyderabad, India, 2001 – 2005 (First Class)</p>
-    </section>
-
-    <section>
-      <h2>Certifications</h2>
-      <ul class="resume-inline-list">
-        <li>Confluent Fundamentals Accreditation — Confluent</li>
-      </ul>
+      <p><strong>Confluent Fundamentals Accreditation</strong> — Confluent</p>
     </section>
   </main>
 

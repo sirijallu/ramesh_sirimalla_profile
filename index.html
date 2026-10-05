@@ -264,10 +264,16 @@
               <h3 class="company-name">CBRE</h3>
               <h4 class="job-title">Kafka Lead Developer</h4>
               <p class="job-meta">Dallas, TX | Jun 2018 – Dec 2018</p>
+              <p class="job-summary">
+                Streamed corporate real estate data from CBRE's Sequentra platform to external lease-accounting
+                systems with Confluent Kafka and microservices.
+              </p>
               <ul class="job-highlights">
-                <li>Developed Spring Boot services with Kafka Connect and KSQL to store audit transactions for real-time dashboards.</li>
-                <li>Designed KStream topologies to dedupe messages and join multiple topics into a final Kafka payload.</li>
-                <li>Built Splunk and Grafana dashboards for business and management users.</li>
+                <li>Implemented complex Confluent Kafka producer use cases publishing 3 million records into the Kafka cluster.</li>
+                <li>Built pub-sub producer and consumer services for payments, reports, occupancies, and other use cases, updating customer applications in real time.</li>
+                <li>Implemented replay and retry logic for business needs, with consumers that reset offsets using the Kafka consumer seek API.</li>
+                <li>Worked closely with data scientists, providing the data inputs required by business requirements, and took part in application design document (ADD) discussions with the strategic architect.</li>
+                <li>Built a proof of concept provisioning AWS infrastructure with Terraform, and worked on CI/CD pipelines with DevOps tools.</li>
               </ul>
             </div>
 
@@ -298,9 +304,14 @@
               <h4 class="job-title">Senior Software Engineer</h4>
               <p class="job-meta">Iowa City, IA | Nov 2011 – Mar 2013</p>
               <p class="job-summary">
-                Developed and maintained Java applications, designed solutions for complex technical
-                challenges, and integrated third-party APIs.
+                Built the fee-processing system for the NBPTS National Board Certification program
+                (about 55,000 certified teachers and counselors), from requirements through go-live.
               </p>
+              <ul class="job-highlights">
+                <li>Developed the core journal-entry flow and about 10 use cases (fund distribution, scholarships, approvals, third-party payer setup), plus journal-entry reports and stored procedures.</li>
+                <li>Built CyberSource credit-card and eCheck reconciliation, and fixed Hosted Order Page timeouts with a POST URL integration.</li>
+                <li>Played a major role in go-live and stabilization, then rolled the application out to other brands.</li>
+              </ul>
             </div>
           </div>
 
