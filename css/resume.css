@@ -71,6 +71,10 @@ h2 {
 .resume-org em { font-weight: 400; }
 
 .resume ul { margin: 0; padding-left: 1.2rem; }
+.resume-project { margin: 0.6rem 0 0.3rem; font-weight: 700; font-size: 0.92rem; color: var(--color-text); }
+.resume li strong { color: var(--color-text); font-weight: 600; }
+.resume-item-head, .resume-org { break-after: avoid; }
+.resume-project { break-after: avoid; }
 .resume li { margin-bottom: 0.3rem; color: var(--color-text-muted); }
 
 .resume-inline-list { display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 0; list-style: none; }
@@ -83,8 +87,18 @@ h2 {
   margin: 0;
 }
 
+@page { size: letter; margin: 0.45in 0.55in; }
+
 @media print {
-  body { background: #fff; }
+  body { background: #fff; font-size: 10pt; line-height: 1.38; }
+  .resume-header { margin-bottom: 0.9rem; padding-bottom: 0.6rem; }
+  .resume-header h1 { font-size: 1.7rem; }
+  section { margin-bottom: 0.9rem; }
+  h2 { margin-bottom: 0.45rem; padding-bottom: 0.2rem; font-size: 0.95rem; }
+  .resume-item { margin-bottom: 0.7rem; }
+  .resume li { margin-bottom: 0.12rem; }
+  .resume-project { margin: 0.35rem 0 0.15rem; }
+  .resume p { margin: 0 0 0.35rem; }
   .no-print { display: none; }
   .resume { box-shadow: none; padding: 0; margin: 0; max-width: none; }
 }
