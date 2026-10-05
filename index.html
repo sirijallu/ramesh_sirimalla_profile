@@ -214,8 +214,13 @@
               <h3 class="company-name">CVS Health</h3>
               <h4 class="job-title">Forward Deployed Engineer</h4>
               <p class="job-meta">Dallas, TX | Dec 2023 – Present</p>
-              <!-- FDE_PENDING -->
+              <p class="job-summary">
+                Build agentic AI that protects CVS Health from compliance losses on patient outreach.
+              </p>
               <ul class="job-highlights">
+                <li>Designed and built a multi-agent AI system with LangGraph that screens patient outreach against the Do Not Contact list and TCPA rules across SMS, email, RCS, and IVR, minimizing CVS Health's financial and legal exposure from compliance violations.</li>
+                <li>Grounded the agents' compliance decisions with retrieval-augmented generation (RAG) over CVS compliance policies, patient consent records, and TCPA regulations.</li>
+                <li>Connected the agents to the federal TCPA and Do Not Call (DNC) lists through the Model Context Protocol (MCP), so every outreach decision is checked against current federal data.</li>
                 <li>Lead engineering teams building healthcare solutions and mentor junior engineers on best practices.</li>
               </ul>
             </div>
@@ -347,6 +352,10 @@
           <div class="tab-panel active" id="tl-highlights" role="tabpanel" aria-labelledby="tab-tl-highlights">
             <div class="feature-list">
               <div class="feature-item">
+                <h3>🤖 Agentic AI for patient outreach compliance</h3>
+                <p>Built a multi-agent LangGraph system, with RAG and MCP, that screens outreach across SMS, email, RCS, and IVR against TCPA and Do Not Contact rules to reduce CVS Health's compliance losses.</p>
+              </div>
+              <div class="feature-item">
                 <h3>📨 Real-time notifications for CVS Health patients</h3>
                 <p>Led design of streaming applications that deliver a near-real-time experience across SMS, email, push, and IVR, with duplicate prevention and legal delivery windows.</p>
               </div>
@@ -470,14 +479,38 @@
           <h2 class="section-title">Featured Projects</h2>
 
           <div class="tab-nav" role="tablist" aria-label="Projects">
-            <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="project-notify" id="tab-project-notify">Patient Notifications</button>
+            <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="project-compliance" id="tab-project-compliance">Compliance AI Agents</button>
+            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="project-notify" id="tab-project-notify">Patient Notifications</button>
             <button class="tab-btn" role="tab" aria-selected="false" aria-controls="project-rocm" id="tab-project-rocm">ROCM &amp; Patient APIs</button>
             <button class="tab-btn" role="tab" aria-selected="false" aria-controls="project-flink" id="tab-project-flink">Streaming POCs</button>
             <button class="tab-btn" role="tab" aria-selected="false" aria-controls="project-zelle" id="tab-project-zelle">Zelle Real-Time Services</button>
             <button class="tab-btn" role="tab" aria-selected="false" aria-controls="project-nys" id="tab-project-nys">NY State Big Data</button>
           </div>
 
-          <article class="tab-panel active project-detail" id="project-notify" role="tabpanel" aria-labelledby="tab-project-notify">
+          <article class="tab-panel active project-detail" id="project-compliance" role="tabpanel" aria-labelledby="tab-project-compliance">
+            <div class="project-header">
+              <span class="project-badge">🤖 CVS Health · Agentic AI</span>
+              <h3>Agentic AI for Patient Outreach Compliance</h3>
+              <p class="project-subtitle">Multi-agent screening against TCPA and Do Not Contact rules before patients are contacted</p>
+            </div>
+            <div class="stat-grid">
+              <div class="stat-card"><div class="stat-icon" aria-hidden="true">📡</div><strong>4</strong><span>Channels: SMS, Email, RCS, IVR</span></div>
+              <div class="stat-card"><div class="stat-icon" aria-hidden="true">🧠</div><strong>Multi-Agent</strong><span>Built with LangGraph</span></div>
+              <div class="stat-card"><div class="stat-icon" aria-hidden="true">⚖️</div><strong>TCPA + DNC</strong><span>Federal Lists via MCP</span></div>
+            </div>
+            <div class="detail-card">
+              <h4><span class="detail-icon" aria-hidden="true">🎯</span> What I Built</h4>
+              <ul class="job-highlights">
+                <li>Designed and built a multi-agent AI system with LangGraph that screens patient outreach against the Do Not Contact list and TCPA rules across SMS, email, RCS, and IVR, minimizing CVS Health's financial and legal exposure from compliance violations.</li>
+                <li>Grounded the agents' compliance decisions with retrieval-augmented generation (RAG) over CVS compliance policies, patient consent records, and TCPA regulations.</li>
+                <li>Connected the agents to the federal TCPA and Do Not Call (DNC) lists through the Model Context Protocol (MCP), so every outreach decision is checked against current federal data.</li>
+              </ul>
+              <h4><span class="detail-icon" aria-hidden="true">🛠️</span> Technology Stack</h4>
+              <ul class="tag-list"><li>LangGraph</li><li>RAG</li><li>Model Context Protocol</li><li>Multi-Agent AI</li></ul>
+            </div>
+          </article>
+
+          <article class="tab-panel project-detail" id="project-notify" role="tabpanel" aria-labelledby="tab-project-notify" hidden>
             <div class="project-header">
               <span class="project-badge">🏥 CVS Health</span>
               <h3>Real-Time Patient &amp; Customer Notifications</h3>
